@@ -1,4 +1,5 @@
 import React from 'react';
+import homeImage from '../assets/img/hero-img.png'; 
 
 const HeroSection = () => {
   return (
@@ -6,7 +7,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-6 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="%PUBLIC_URL%/assets/img/hero-img.png" className="img-fluid animated" alt="" />
+            <img  src={homeImage}  className="img-fluid animated" alt="" />
           </div>
           <div className="col-lg-6 d-flex flex-column justify-content-center text-center text-md-start" data-aos="fade-in">
             <h2>App landing page template</h2>

@@ -2,17 +2,27 @@
 import React from 'react';
 import Navbar from './Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./styles/fonts/icomoon/style.css";
+import "./styles/css/owl.carousel.min.css";
+
+import "./styles/css/bootstrap.min.css";
+
+import "./styles/css/style.css";
+import undrawRemotely from './styles/images/undraw_remotely_2j6y.svg'; 
+
 
 const Signin = () => {
     return (
         <>
-        <Navbar />
-        <div className="content">
+         <Navbar />
+        <div className="content full-height">
+       
+
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
                         <img 
-                            src="https://example.com/undraw_remotely_2j6y.svg" 
+                           src={undrawRemotely} 
                             alt="Image" 
                             className="img-fluid" 
                         />
