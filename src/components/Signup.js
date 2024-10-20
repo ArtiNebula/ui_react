@@ -13,7 +13,7 @@ const Signup = () => {
         e.preventDefault();
 
         // Replace with your actual API endpoint
-        const response = await fetch('https://your-api-endpoint.com/signup', {
+        const response = await fetch('https://54.87.252.47:8181/api/createuser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
