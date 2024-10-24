@@ -1,6 +1,6 @@
 import React from 'react';
 import features from './../../assets/img/features.svg'; 
-
+import './../../assets/css/main.css';
 import './../../assets/vendor/bootstrap-icons/bootstrap-icons.css';
 
 
@@ -27,8 +27,9 @@ const Features = () => {
                             <div className="col-md-6 icon-box">
                                 <i className="bi bi-award"></i>
                                 <div>
-                                    <h4>Corporis voluptates sit</h4>
-                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                    <h4>Amazon CloudWatch</h4>
+                                    <p>Monitors AWS resources and applications in real-time, collecting and tracking metrics, creating dashboards, and setting alarms
+                                    </p>
                                 </div>
                             </div>
                             {/* End Feature Item */}
@@ -36,8 +37,8 @@ const Features = () => {
                             <div className="col-md-6 icon-box">
                                 <i className="bi bi-card-checklist"></i>
                                 <div>
-                                    <h4>Ullamco laboris nisi</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                                    <h4>Elastic Load Balancing (ELB)</h4>
+                                    <p>Distributes incoming traffic across multiple targets (EC2 instances, containers) in different Availability Zones, improving application availability and scalability</p>
                                 </div>
                             </div>
                             {/* End Feature Item */}
@@ -45,8 +46,8 @@ const Features = () => {
                             <div className="col-md-6 icon-box">
                                 <i className="bi bi-dribbble"></i>
                                 <div>
-                                    <h4>Labore consequatur</h4>
-                                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                    <h4>Amazon RDS</h4>
+                                    <p>Integrates data from multiple sources for seamless ETL (Extract, Transform, Load) processes</p>
                                 </div>
                             </div>
                             {/* End Feature Item */}
@@ -54,8 +55,8 @@ const Features = () => {
                             <div className="col-md-6 icon-box">
                                 <i className="bi bi-filter-circle"></i>
                                 <div>
-                                    <h4>Beatae veritatis</h4>
-                                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                                    <h4>Amazon S3</h4>
+                                    <p>Managed relational database service for scaling database operations</p>
                                 </div>
                             </div>
                             {/* End Feature Item */}
@@ -63,8 +64,8 @@ const Features = () => {
                             <div className="col-md-6 icon-box">
                                 <i className="bi bi-lightning-charge"></i>
                                 <div>
-                                    <h4>Molestiae dolor</h4>
-                                    <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
+                                    <h4>Amazon EC2 Instances</h4>
+                                    <p>Provides scalable virtual servers with various instance types optimized for different use cases, offering a balance of compute, memory, and storage resources</p>
                                 </div>
                             </div>
                             {/* End Feature Item */}
@@ -72,8 +73,8 @@ const Features = () => {
                             <div className="col-md-6 icon-box">
                                 <i className="bi bi-patch-check"></i>
                                 <div>
-                                    <h4>Explicabo consectetur</h4>
-                                    <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+                                    <h4>Amazon Identity and Access Management (IAM)</h4>
+                                    <p>Amazon IAM allows you to control access to AWS resources securely and efficiently</p>
                                 </div>
                             </div>
                             {/* End Feature Item */}

@@ -1,71 +1,56 @@
 import React from 'react';
-import TeamOne from './../../assets/img/team/team-1.jpg'; 
+import TeamOne from './../../assets/img/team/Team-1.png'; 
 import TeamSecond from './../../assets/img/team/team-2.jpg';
 import TeamThird from './../../assets/img/team/team-3.jpg';
 import TeamForth from './../../assets/img/team/team-4.jpg';
 
 const teamMembers = [
     {
-        name: "Walter White",
-        title: "Chief Executive Officer",
-        description: "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
+        name: "VEERPRAKASH RATHOR",
+        title: "Software Engineer",
+        description: "Specializing in building robust and scalable backend applications.",
         imgSrc: TeamOne,
         socialLinks: {
-            twitter: "#",
-            facebook: "#",
-            instagram: "#",
             linkedin: "#"
         },
         aosDelay: 100
     },
     {
-        name: "Sarah Jhonson",
-        title: "Product Manager",
+        name: "P N V KRISHNA TEJA",
+        title: "Cloud Security and Cyber Security Engineer",
         description: "Aut maiores voluptates amet et quis praesentium qui senda para",
-        imgSrc: TeamSecond,
+        imgSrc: TeamThird,
         socialLinks: {
-            twitter: "#",
-            facebook: "#",
-            instagram: "#",
             linkedin: "#"
         },
         aosDelay: 200
     },
     {
-        name: "William Anderson",
-        title: "CTO",
+        name: "PADALA HARSHA VARDHAN REDDY",
+        title: "Engineer III DevOps Consultant",
         description: "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
         imgSrc: TeamThird,
         socialLinks: {
-            twitter: "#",
-            facebook: "#",
-            instagram: "#",
             linkedin: "#"
         },
         aosDelay: 300
     },
     {
-        name: "Amanda Jepson",
-        title: "Accountant",
+        name: "AMAN REDDY KAILA",
+        title: "QA Engineer",
         description: "Dolorum tempora officiis odit laborum officiis et et accusamus",
-        imgSrc: TeamForth,
+        imgSrc: TeamThird,
         socialLinks: {
-            twitter: "#",
-            facebook: "#",
-            instagram: "#",
             linkedin: "#"
         },
         aosDelay: 400
     },
     {
-        name: "Amanda Jepson",
-        title: "Accountant",
-        description: "Dolorum tempora officiis odit laborum officiis et et accusamus",
+        name: "ARTI KUMARI",
+        title: "Software Engineer",
+        description: "Passionate about designing intuitive UI/UX and building seamless fullstack applications",
         imgSrc: TeamForth,
         socialLinks: {
-            twitter: "#",
-            facebook: "#",
-            instagram: "#",
             linkedin: "#"
         },
         aosDelay: 400
@@ -83,9 +68,6 @@ const TeamMember = ({ member }) => (
                 <span>{member.title}</span>
                 <p>{member.description}</p>
                 <div className="social">
-                    <a href={member.socialLinks.twitter}><i className="bi bi-twitter-x"></i></a>
-                    <a href={member.socialLinks.facebook}><i className="bi bi-facebook"></i></a>
-                    <a href={member.socialLinks.instagram}><i className="bi bi-instagram"></i></a>
                     <a href={member.socialLinks.linkedin}><i className="bi bi-linkedin"></i></a>
                 </div>
             </div>

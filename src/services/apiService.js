@@ -1,5 +1,5 @@
 // src/authService.js
-const API_URL = 'https://18.234.159.251/api/createuser';
+const API_URL = 'localhost:8181/api/createuser';
 
 const signup = async (userData) => {
   const response = await fetch(`${API_URL}`, {

@@ -39,8 +39,8 @@ const Navbar = () => {
         {/* Conditional rendering based on authentication status */}
         {!isLoggedIn ? (
           <>
-           <Link className={`btn-getstarted ${location.pathname === '/signup' ? 'active' : ''}`} to="/signup">Sign Up</Link>
-            <Link className={`btn-getstarted ${location.pathname === '/signin' ? 'active' : ''}`} to="/signin">Sign In</Link>
+           <Link className={`${location.pathname === '/signup' ? 'btn-getstarted-active' : 'btn-getstarted '}`} to="/signup">Sign Up</Link>
+            <Link className={` ${location.pathname === '/signin' ? 'btn-getstarted-active' : 'btn-getstarted '}`} to="/signin">Sign In</Link>
           
           </>
         ) : (

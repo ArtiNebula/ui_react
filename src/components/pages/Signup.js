@@ -1,4 +1,3 @@
-// src/Signup.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -9,9 +8,8 @@ const Signup = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    
-    const mutation = useSignup(); // Use the custom hook
 
+    const mutation = useSignup(); // Use the custom hook
     const handleSubmit = (e) => {
         e.preventDefault();
         mutation.mutate({ name, email, password }); // Trigger the mutation
@@ -30,44 +28,41 @@ const Signup = () => {
                                         <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                                             <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign Up</p>
                                             <form className="mx-1 mx-md-4" onSubmit={handleSubmit}>
-                                                <div className="d-flex flex-row align-items-center mb-4">
-                                                    <i className="fas fa-user fa-lg me-3 fa-fw"></i>
-                                                    <div className="form-outline flex-fill mb-0">
-                                                        <input 
-                                                            type="text" 
-                                                            className="form-control" 
-                                                            value={name}
-                                                            onChange={(e) => setName(e.target.value)}
-                                                            required
-                                                        />
-                                                        <label className="form-label">Your Name</label>
-                                                    </div>
+                                                <div className="form-floating mb-4">
+                                                    <input 
+                                                        type="text" 
+                                                        className="form-control" 
+                                                        id="floatingName" 
+                                                        value={name}
+                                                        onChange={(e) => setName(e.target.value)} 
+                                                        placeholder="Your Name" 
+                                                        required 
+                                                    />
+                                                    <label htmlFor="floatingName">Your Name</label>
                                                 </div>
-                                                <div className="d-flex flex-row align-items-center mb-4">
-                                                    <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                                                    <div className="form-outline flex-fill mb-0">
-                                                        <input 
-                                                            type="email" 
-                                                            className="form-control" 
-                                                            value={email}
-                                                            onChange={(e) => setEmail(e.target.value)}
-                                                            required
-                                                        />
-                                                        <label className="form-label">Your Email</label>
-                                                    </div>
+                                                <div className="form-floating mb-4">
+                                                    <input 
+                                                        type="email" 
+                                                        className="form-control" 
+                                                        id="floatingEmail" 
+                                                        value={email}
+                                                        onChange={(e) => setEmail(e.target.value)} 
+                                                        placeholder="Your Email" 
+                                                        required 
+                                                    />
+                                                    <label htmlFor="floatingEmail">Your Email</label>
                                                 </div>
-                                                <div className="d-flex flex-row align-items-center mb-4">
-                                                    <i className="fas fa-lock fa-lg me-3 fa-fw"></i>
-                                                    <div className="form-outline flex-fill mb-0">
-                                                        <input 
-                                                            type="password" 
-                                                            className="form-control" 
-                                                            value={password}
-                                                            onChange={(e) => setPassword(e.target.value)}
-                                                            required
-                                                        />
-                                                        <label className="form-label">Password</label>
-                                                    </div>
+                                                <div className="form-floating mb-4">
+                                                    <input 
+                                                        type="password" 
+                                                        className="form-control" 
+                                                        id="floatingPassword" 
+                                                        value={password}
+                                                        onChange={(e) => setPassword(e.target.value)} 
+                                                        placeholder="Password" 
+                                                        required 
+                                                    />
+                                                    <label htmlFor="floatingPassword">Password</label>
                                                 </div>
                                                 <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                                     <button 
